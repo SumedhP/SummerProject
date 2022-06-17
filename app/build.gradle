@@ -11,6 +11,14 @@ plugins {
     id 'application'
 }
 
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'CalendarQuickstart'
+sourceCompatibility = 11
+targetCompatibility = 11
+version = '1.0'
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -22,11 +30,16 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
+
+     implementation 'com.google.api-client:google-api-client:1.33.0'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.32.1'
+    implementation 'com.google.apis:google-api-services-calendar:v3-rev20211026-1.32.1'
+
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'summerproject.App'
+    mainClass = 'summerproject.CalendarQuickstart'
 }
 
 tasks.named('test') {
