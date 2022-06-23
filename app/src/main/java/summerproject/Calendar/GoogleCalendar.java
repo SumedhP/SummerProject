@@ -44,7 +44,7 @@ public class GoogleCalendar implements summerproject.Calendar.Calendar{
     
     private final NetHttpTransport HTTP_TRANSPORT;
     
-    private final Calendar calendar;
+    public final Calendar calendar;
 
     public GoogleCalendar() throws GeneralSecurityException, IOException{
         HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -87,7 +87,7 @@ public class GoogleCalendar implements summerproject.Calendar.Calendar{
 				.setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
 				.setAccessType("offline")
 				.build();
-                
+
 		LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
 		Credential credential = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
 		//returns an authorized Credential object.
