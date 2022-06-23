@@ -95,7 +95,4 @@ public class GoogleCalendar implements summerproject.Calendar.Calendar{
 	}
 
 
-    public void addingMethodToTestGit(){
-        
-    }
 }
