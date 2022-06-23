@@ -93,4 +93,9 @@ public class GoogleCalendar implements summerproject.Calendar.Calendar{
 		//returns an authorized Credential object.
 		return credential;
 	}
+
+
+    public void addingMethodToTestGit(){
+        
+    }
 }
