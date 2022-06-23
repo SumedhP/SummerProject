@@ -1,8 +1,10 @@
 # Ignore Gradle project-specific cache directory
 .gradle
 
+### Java ###
+# Compiled class file
+*.class
+
+
 # Ignore Gradle build output directory
 build
-
-#Ignore things named .class
-*.class
