@@ -94,5 +94,8 @@ public class GoogleCalendar implements summerproject.Calendar.Calendar{
 		return credential;
 	}
 
+    public void thisShyouldHopegullyOnylChangeThisclass(){
+
+    }
 
 }
