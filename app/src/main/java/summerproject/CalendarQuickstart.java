@@ -25,11 +25,11 @@ public class CalendarQuickstart {
 		newEvent.setStart(new EventDateTime().setDate(now));
 		newEvent.setEndTimeUnspecified(true);
 
-		System.out.println(newEvent);
+		// System.out.println(newEvent);
 
-		System.out.println("This has happened");
+		// System.out.println("This has happened");
 
-		service.calendar.events().insert("Sumedh", newEvent).execute();
+		service.calendar.events().insert("primary", newEvent).execute();
 
 		Events events = service.calendar.events().list("primary")
 				.setMaxResults(10)
