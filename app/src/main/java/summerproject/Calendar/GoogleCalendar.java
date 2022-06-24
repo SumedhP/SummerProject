@@ -32,7 +32,7 @@ public class GoogleCalendar implements summerproject.Calendar.Calendar{
 	 * Global instance of the scopes required by this quickstart.
 	 * If modifying these scopes, delete your previously saved tokens/ folder.
 	 */
-	private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR_READONLY);
+	private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR);
 	private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
     
     
